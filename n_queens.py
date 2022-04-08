@@ -32,12 +32,7 @@ def undoqueen(i,j):
   board['col'][j] = 0
   board['nwtose'][j-i] = 0
   board['swtone'][j+i] = 0
-# n = 4   
-# dict ={queen{0: 0, 1:-1 , 2:-1 , 3:-1},
-# row{0:1,1:0,2:0,3:0},
-# column{0:1,1:0,2:0,3:0},
-# NwtoSe{-3:0,-2:0,-1:0,0:1,1:0,2:0,3:0},
-# SwtoNe{0:1,1:0,2:0,3:0,4:0,5:0}}
+
 def placequeen(i):
   n = len(board['queen'].keys())
   for j in range(n):
